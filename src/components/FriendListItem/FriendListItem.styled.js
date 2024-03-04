@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Item = styled.li`
   position: relative;
   padding: 10px;
-  margin-left: 10px;
+  /* margin-left: 10px; */
 `;
 
 export const FriendStatus = styled.span`
@@ -15,7 +15,7 @@ export const FriendStatus = styled.span`
   border-radius: 50%;
   width: 12px;
   height: 12px;
-  background-color: green;
+  background: ${props => (props.$status ? 'green' : 'red')};
 `;
 
 export const FriendAvatar = styled.img`

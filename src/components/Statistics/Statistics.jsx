@@ -1,3 +1,6 @@
+import PropTypes from 'prop-types';
+
+import getRandomColor from './GetRandomColor';
 import {
   Label,
   Percentage,
@@ -15,7 +18,7 @@ export const Statistics = ({ title, stats }) => {
       <StatList>
         {stats.map(({ id, label, percentage }) => {
           return (
-            <StatItem key={id}>
+            <StatItem key={id} style={{ backgroundColor: getRandomColor() }}>
               <Label>{label}</Label>
               <Percentage>{percentage}%</Percentage>
             </StatItem>
@@ -24,4 +27,9 @@ export const Statistics = ({ title, stats }) => {
       </StatList>
     </StatisticsWrapper>
   );
+};
+
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.array,
 };

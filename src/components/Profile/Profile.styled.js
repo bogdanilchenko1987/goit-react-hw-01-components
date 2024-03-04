@@ -1,27 +1,41 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  width: 400px;
+  width: 100%;
   margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  background-color: white;
+  background: rgba(180, 227, 212, 0.22);
   border: 2px solid black;
   margin-bottom: 100px;
+  border-radius: 18px;
 `;
 
 export const Description = styled.div`
   /* display: flex;
   flex-direction: column; */
+  position: relative;
+  background: rgba(142, 227, 212, 0.22);
 `;
 
 export const Avatar = styled.img`
-  vertical-align: middle;
+  /* vertical-align: middle;
   width: 200px;
   height: 200px;
+  border-radius: 50%; */
+  position: absolute;
+  transform: translate(-50px, -60px);
+
+  max-height: 92px;
   border-radius: 50%;
+  background: #d9d9d9;
+  border: 6px solid #ffffff;
 `;
 
 export const Name = styled.p`
+  margin-top: 50px;
   font-weight: bold;
   font-size: 24px;
 `;
@@ -40,7 +54,7 @@ export const Stats = styled.ul`
   list-style: none;
   display: flex;
   justify-content: space-evenly;
-  background-color: #ede6e6;
+
   height: 60px;
   margin: 0;
   padding: 10px;

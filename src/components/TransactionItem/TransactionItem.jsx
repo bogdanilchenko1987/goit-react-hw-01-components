@@ -1,9 +1,19 @@
+import PropTypes from 'prop-types';
+
+import { TableR } from './TransactionItem.styled';
+
 export const TransactionItem = ({ currency, amount, type }) => {
   return (
-    <tr>
+    <TableR>
       <td>{type}</td>
       <td>{amount}</td>
       <td>{currency}</td>
-    </tr>
+    </TableR>
   );
+};
+
+TransactionItem.propTypes = {
+  currency: PropTypes.string,
+  amount: PropTypes.string,
+  type: PropTypes.string,
 };
