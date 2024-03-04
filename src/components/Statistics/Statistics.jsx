@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 
 import getRandomColor from './GetRandomColor';
+
 import {
   Label,
   Percentage,

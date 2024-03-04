@@ -14,17 +14,11 @@ export const Wrapper = styled.div`
 `;
 
 export const Description = styled.div`
-  /* display: flex;
-  flex-direction: column; */
   position: relative;
   background: rgba(142, 227, 212, 0.22);
 `;
 
 export const Avatar = styled.img`
-  /* vertical-align: middle;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%; */
   position: absolute;
   transform: translate(-50px, -60px);
 

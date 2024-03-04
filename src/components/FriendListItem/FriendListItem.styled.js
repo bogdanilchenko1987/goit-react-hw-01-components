@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const Item = styled.li`
   position: relative;
   padding: 10px;
-  /* margin-left: 10px; */
 `;
 
 export const FriendStatus = styled.span`
